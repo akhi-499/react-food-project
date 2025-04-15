@@ -1,0 +1,124 @@
+.register-main, .login-main {
+    width: 400px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-flow: column;
+    margin-top: 40px;
+    justify-self: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.errP {
+    align-self: center;
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register-main p, .login-main p {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.register-main h1, .login-main h1 {
+    align-self: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.register-main input, .login-main input {
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    border-color: #3498db;
+    caret-color: #3498db;
+}
+
+.register-main button, .login-main button {
+    margin: 15px 0px !important;
+    height: 40px;
+    width: 100%;
+    align-self: center;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-main button:hover, .login-main button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    transform: translateY(-1px);
+}
+
+.login-body, .register-body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    margin-top: -61px;
+    padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.register-main small, .login-main small {
+    color: #dc3545;
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.register-main p:last-child, .login-main p:last-child {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+.register-main a, .login-main a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-main a:hover, .login-main a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
